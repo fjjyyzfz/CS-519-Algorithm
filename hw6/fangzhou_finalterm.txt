@@ -1,0 +1,91 @@
+1.
+
+Java: 
+TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+}
+class solution {
+	public List<Integer> printPath (TreeNode root, int key) {
+		List<Integer> result = new ArrayList<Integer>();
+		if (root == null) {
+			return result;
+		}
+		findPath(result, root, key, new ArrayList<Integer>());
+		return result;
+	}
+	
+	public findPath (ArrayList<Integer> result, TreeNode root, int key, ArrayList<Integer> path) {
+		if (root == null) {
+		    return;
+		}
+		if (root.val == key) {
+			path.add(root.val);
+			result = path;
+			return;
+		} else {
+			path.add(root.val);
+		}
+		ArrayList<Integer> pathLeft = new ArrayList<Integer>(path);
+		findPath(pathLeft, root.left, key);
+		ArrayList<Integer> pathRight = new ArrayList<Integer>(path);
+		findPath(pathRight, root.right, key);
+	
+	}
+}
+
+2.
+class solution {
+	public int stringCombinationNum(String number) {
+		length = number.length();
+		if (number.charAt(0) - '0' == 0) {
+			return 0;
+		} 
+		if (length == 1) {
+   			return 1;
+
+		}
+		int count = countCombination(String number.subString(0, 0), String number, 0);
+		count = count + countCombination(String number.subString(0, 1), String number, 1);
+		return count;
+	pubilc countCombination(String temp, String number, int index) {
+    	int count = 0;
+    	int value = Integer.inValue(temp);
+    	if (index >= length) {
+    		return;
+    	}
+       	if (value == 0) {
+    		return;
+    	} else if (value < 3) {
+    		count = countCombination(number.subString(index + 1,index + 1), number, index + 1) + 1;
+    		count = count + countCombination(number.subString(index + 1, index + 2), number, index + 2) + 1;
+    	} else {
+    		count = count + countCombination(number.charAt(index + 1), number, index + 1) + 1;
+    	}
+    	return count;
+    }   			
+
+}
+
+
+3. 
+int kthSmall(int[] arr1, int[] arr2, int k) {
+	int i = 0, j = 0, count = 0;
+	Stack<Integer> kSmall = new Stack<Integer>();
+	while(i < k || j < k) {
+		if(arr1[i] <= arr2[j]) {
+			kSmall.push(arr1[i]);
+			i++;
+			count++;
+		} else {
+			kSmall.push(arr2[j]);
+			j++;
+			count++;
+		}
+		if (count == k) {
+			return kSmall.pop();
+		}
+
+	}
+}

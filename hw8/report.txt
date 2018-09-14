@@ -1,0 +1,21 @@
+0. (a) First choose the smallest value in the list, then find the next smallest value in the following list.
+    counter example: edcg
+    (b) Find all topological sort takes O((V+E)*n)
+1. Time complexity:O(VE)
+   space complexity: O(E)
+2. (a) 
+    (b) they use dynamic programming
+    (c) The best way to do topological sort is bottom-up.
+
+
+
+Debriefing
+0. Zhou Fang
+1. 10 hours
+2. hard
+3. alone
+4. 60%
+5. review
+6. Sometimes, it is not clearly explained some questions.
+
+

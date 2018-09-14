@@ -1,0 +1,27 @@
+0. Best case: Time complexity: O(nlogn). The best case happens when pivot is the middle one. That means each recursive call process a list of half size. We can only make logn nested calls totally, so time complexity is O(nlogn).
+  Average case: Time complexity: O(nlogn). Average case should be same as best case.
+  Worst case: Time complexity: O(n^2). The worst case happens when the sequences are sorted or verse sorted. That means for first time, we need to do n. For second time, n-1. Third time, n-2. The total time complexity is O(1+2+3....+n-1+n) = O(n^2).
+
+
+1. Best case: Time complexity: O(n). The best case happens when pivot is the middle one. That means first time, we need to do n. second time is n/2. Third time is n/4. The total time complexity is 0(n).
+   Average case: Time complexity: O(n). Average case should be same as best case.
+   Worst case: Time complexity: O(n^2). The worst case happens when the sequences are sorted or verse sorted. We can not decrease list size. That means for first time, we need to do n. For second time, n-1. Third time, n-2. The total time complexity is O(1+2+3....+n-1+n) = O(n^2).
+
+
+2. Time complexity: O(nlogn).
+
+
+
+
+
+Debriefing
+
+1. 3 hours.
+
+2. moderate.
+
+3. wokr it alone.
+
+4. 100%.
+
+5. No comments. It is great.

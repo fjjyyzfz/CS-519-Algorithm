@@ -1,0 +1,26 @@
+0. 
+(a)
+	(1)In the bottom of the tree, we need log(n) steps and there are (n/2) numbers of nodes. The top of tree we need 0 step and there is one node. In the second layer we have two node and 1 step is needed. In total, we need n/2*log(n) + n/4*(log(n) - 1) +.....+ 1 = n (1/2*log(n) - 1/4*(log(n) - 1) + ....1/n) = n[log(n(1/2 + 1/4 + 1/8+....) - (1/4 + 2/8 + 3/16 +_....))] = n[log(n) - 1] = O(nlog(n))
+	(2) In heapify, we need totally n/2*1 + n/4*2 + n/8*3 +..... = n[1/2 + 1/4 + 1/8 + ] = 2n = O(n)
+(b) a = [random.randint(0,100000000) for x in range(100)]
+	a.shuffle()
+	time heapq.heapify(a) 19.8 us
+	time for x in a: heapq.heappush(heap, x) 155us
+(c) For reverse array, it is the wost case for both cases. That means we need to do many swap amost every 		push.
+	For sorted array. It is best case.
+1.  Time complexity for nbesta is O(n^2 + nlogn) = O(n^2)
+ 	Time complexity for nbestb is O(n^2 + n) = O(n^2)
+ 	Time complexity for nbestc is O(nlogn)
+2.  Time complexity is O(knlog(k)). Because we have n numbers, we repeat k*n times of heap merge. merge of k 	 takes log(k) times. Totally, it takes O(knlog(k)).
+3.  Time complexity is O(nlog(k) + nlog(n)). We have a for loop of n times, in the for loop, we may have to 	heap push and pop a value, heap push take log(k) times. Finally, we need to sort heap list, so the time 	complexity is O(nlog(n)).
+
+Debriefing:
+0. Zhou Fang.
+1. 4 hours.
+2. moderate.
+3. I work it alone.
+4. 85%.
+5. Make some explain on homework. That is very helpful.
+6. No.
+
+

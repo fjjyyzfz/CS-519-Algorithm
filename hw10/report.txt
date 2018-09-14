@@ -1,0 +1,9 @@
+1. In the first problem. I check whether ith can be paired with jth. If can, update opt[i, j]. Then compare with each subproblem from opt[i,k] + opt[k+1, j], k is from i to j - 1. If opt[i,k] + opt[k+1, j] > opt[i, j], update opt[i, j].
+space complexity: O(n^2)
+time complexity: O(n^3)
+2. In this prolem, check whether rna[i] pair with rna[k], k is from i + 1 to j. if pairs, opt[i, j] = opt[i, k]*opt[k+1, j]
+space complexity: O(n^2)
+time complexity: O(n^3)
+3. There are two cases: 1. matrix: rna[i] pair with k, k is from i + 1 to j. 2. sequence: rna[i] doesn't pair with any k. heapq pop the max number each time. If the number comes from paired matrixs, push the next two into heap. If the number comes from sequence, push next element into heap.
+space complexity: O(n^2*k)
+time complexity(n^2*k*logn + n^3)

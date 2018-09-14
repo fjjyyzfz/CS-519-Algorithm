@@ -1,0 +1,12 @@
+0. If we use recursion to solve Fibonacci, it is O(1.618^n). If we use dynamic programming to solve it, it is O(n).
+1. Time complexity is O(n).
+2. Time complexity is O(n^2). It is Catalan numbers.
+
+Debriefing:
+0. Zhou Fang.
+1. 2 hours.
+2. Easy.
+3. I work on it alone.
+4. 100%.
+5. Examples used in class to help understanding.
+6. No.

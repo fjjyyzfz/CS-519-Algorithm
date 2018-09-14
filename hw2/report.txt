@@ -1,0 +1,10 @@
+0. (a) mergesort, (b) quicksort with the first element as pivot and (e) insectionsort can be stable. Others cannot be stable.
+
+
+Debriefing:
+0. Zhou Fang
+1. I spend 5 hours on this assignment.
+2. Moderate.
+3. I work it alone.
+4. Sometimes I think I fully understand all materials, but when I were asked the question in different way, I failed. Maybe I am not fully understand all things, around 60%-70%.
+5. It is hard to see from blackboard sometimes, even in record video, I can not see the blackboard. Maybe projection machine is a good way to see clearly.

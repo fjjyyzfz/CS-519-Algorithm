@@ -1,0 +1,13 @@
+1. space complexity: VlogV
+   time complexity: ElogV + VlogV
+2. space complexity: V
+   time complexity: E + V
+
+Debriefing:
+0. Zhou Fang
+1. 6 HOURS
+2. DIFFICULT
+3. ALONE
+4. 50%
+5. EXAMPLES
+6. NOT CLEAR EXPLAIN SOME QUESTION.
